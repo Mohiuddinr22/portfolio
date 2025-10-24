@@ -10,7 +10,7 @@ export default function Header({
   experiencesHeight,
 }) {
   const [cssState, setCssState] = useState('sm');
-  const states = ['sm', 'md'];
+  const states = ['sm', 'lg'];
 
   useEffect(() => {
     let index = 0;
@@ -45,7 +45,7 @@ export default function Header({
                      transition-all
                      duration-1000
                      ease-in-out
-                     text-shadow-${cssState}
+                     ${cssState === 'sm' ? 'text-shadow-sm' : 'text-shadow-lg'}
                      text-shadow-neutral-500
                      sm:text-2xl
                      md:text-3xl

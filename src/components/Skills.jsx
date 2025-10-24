@@ -73,7 +73,7 @@ export default function Skills({ skillsHeight }) {
       className="w-full h-auto text-slate-900 bg-neutral-100 m-2 p-2 flex flex-col justify-center items-center"
     >
       <h1
-        className={`text-2xl text-slate-900 font-bold my-4 mx-8 p-4 sm:text-3xl md:text-4xl lg:text-5xl text-shadow-${cssState} text-shadow-neutral-500 transition-all duration-500 ease-in-out`}
+        className={`text-2xl text-slate-900 font-bold my-4 mx-8 p-4 sm:text-3xl md:text-4xl lg:text-5xl ${cssState === 'sm' ? 'text-shadow-sm' : 'text-shadow-lg'} text-shadow-neutral-500 transition-all duration-500 ease-in-out`}
       >
         Skills
       </h1>

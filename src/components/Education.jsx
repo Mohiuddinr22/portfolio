@@ -20,14 +20,14 @@ export default function Education({ educationHeight }) {
   return (
     <div
       ref={educationHeight}
-      className="w-full h-auto bg-neutral-100 p-8 m-2 text-slate-900 flex flex-col justify-center items-center"
+      className="w-full h-auto bg-neutral-100 py-8 px-2 m-2 text-slate-900 flex flex-col justify-center items-center"
     >
       <h1
-        className={`text-2xl text-slate-900 font-bold my-4 mx-8 p-4 sm:text-3xl md:text-4xl lg:text-5xl text-shadow-${cssState} text-shadow-neutral-500 transition-all duration-500 ease-in-out`}
+        className={`text-2xl text-slate-900 font-bold my-4 mx-8 p-4 sm:text-3xl md:text-4xl lg:text-5xl ${cssState === 'sm' ? 'text-shadow-sm' : 'text-shadow-lg'} text-shadow-neutral-500 transition-all duration-500 ease-in-out`}
       >
         Education
       </h1>
-      <div className="overflow-x-auto p-4 m-4 rounded-box border border-slate-content/5 bg-neutral-100">
+      <div className="overflow-x-scroll w-full p-2 m-2 rounded-box border border-slate-content/5 bg-neutral-100">
         <table className="table text-slate-900 border-slate-800">
           <thead className="text-slate-900">
             <tr className="border-slate-800">

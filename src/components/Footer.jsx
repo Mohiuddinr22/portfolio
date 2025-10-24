@@ -1,30 +1,31 @@
 export default function Footer() {
   return (
     <footer className="footer footer-horizontal footer-center bg-base-200 w-full text-base-content rounded p-10">
-      <div class="px-4 py-6 w-full bg-slate-100 dark:bg-slate-700 md:flex md:items-center md:justify-between">
-        <span class="text-sm text-slate-500 dark:text-slate-300 sm:text-center">
+      <div className="px-4 py-6 w-full bg-slate-100 dark:bg-slate-700 md:flex md:items-center md:justify-between">
+        <span className="text-sm text-slate-500 dark:text-slate-300 sm:text-center">
           © 2025{' '}
           <a href="https://mohiuddinr22-portfolio.netlify.app/">
             Mohiuddin Mohi
           </a>
           . All Rights Reserved.
         </span>
+        <span className="text-sm text-slate-500 dark:text-slate-300 sm:text-center">&lt;mohiuddinr.22@gmail.com&gt;</span>
         <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
           <a
             href="https://www.facebook.com/mohiuddin.mohi.659308"
             class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
           >
             <svg
-              class="w-4 h-4"
+              className="w-4 h-4"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
               viewBox="0 0 8 19"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               />
             </svg>
             <span class="sr-only">Facebook page</span>
@@ -58,12 +59,12 @@ export default function Footer() {
               <path d="M13.601 2.326A7.513 7.513 0 0 0 8.002.5C4.09.5.9 3.69.9 7.602c0 1.334.35 2.644 1.015 3.794L.5 15.5l4.281-1.12A7.533 7.533 0 0 0 8.002 15.5h.004c3.913 0 7.103-3.19 7.103-7.103 0-1.882-.733-3.648-2.508-5.071z" />
               <path d="M11.064 9.6c-.16-.08-.94-.47-1.086-.52-.145-.05-.25-.08-.35.08-.1.16-.39.52-.48.62-.09.1-.18.11-.34.04-.16-.06-.7-.26-1.33-.82-.49-.44-.82-.98-.91-1.14-.09-.16-.01-.25.06-.33.06-.06.16-.17.24-.26.08-.08.11-.14.16-.24.05-.1.02-.18-.01-.26-.04-.08-.35-.84-.48-1.15-.13-.31-.26-.27-.36-.27-.09-.01-.2-.01-.31-.01-.11 0-.28.04-.43.19-.15.14-.56.56-.56 1.37 0 .8.47 1.72.53 1.95.06.23.84 1.5 2.03 2.42 1.2.95 1.85 1 2.24 1 .38 0 1.2-.14 1.72-.82.51-.68.51-1.26.36-1.4-.15-.13-.54-.2-.7-.28z" />
             </svg>
-            <span class="sr-only">WhatsApp</span>
+            <span className="sr-only">WhatsApp</span>
           </a>
 
           <a
             href="https://www.github.com/Mohiuddinr22/"
-            class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
           >
             <svg
               class="w-4 h-4"
@@ -73,16 +74,16 @@ export default function Footer() {
               viewBox="0 0 20 20"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               />
             </svg>
-            <span class="sr-only">GitHub account</span>
+            <span className="sr-only">GitHub account</span>
           </a>
           <a
             href="https://www.linkedin.com/in/mohiuddin-mohi-5936b5238/"
-            class="text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            className="text-gray-400 hover:text-gray-900 dark:hover:text-white"
           >
             <svg
               class="w-4 h-4"

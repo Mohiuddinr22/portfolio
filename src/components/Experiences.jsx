@@ -23,7 +23,7 @@ export default function Experiences({ experiencesHeight }) {
       className="w-full h-auto bg-neutral-100 p-8 m-2 text-slate-900 flex flex-col justify-center items-center"
     >
       <h1
-        className={`text-2xl text-slate-900 font-bold my-4 mx-8 p-4 sm:text-3xl md:text-4xl lg:text-5xl text-shadow-${cssState} text-shadow-neutral-500 transition-all duration-500 ease-in-out`}
+        className={`text-2xl text-slate-900 font-bold my-4 mx-8 p-4 sm:text-3xl md:text-4xl lg:text-5xl ${cssState === 'sm' ? 'text-shadow-sm' : 'text-shadow-lg'} text-shadow-neutral-500 transition-all duration-500 ease-in-out`}
       >
         Experinces
       </h1>
@@ -39,13 +39,39 @@ export default function Experiences({ experiencesHeight }) {
           <tbody className="border-slate-800">
             <tr className="border-slate-800">
               <td>April 2022 - March 2024</td>
-              <td><a className='hover:text-slate-700 hover:text-shadow-neutral-800 hover:text-shadow-xs underline' href="https://www.britishcouncil.org.bd/en">BRITISH COUNCIL - BANGLADESH</a></td>
+              <td>
+                <a
+                  className="hover:text-slate-700 hover:text-shadow-neutral-800 hover:text-shadow-xs underline"
+                  href="https://www.britishcouncil.org.bd/en"
+                >
+                  BRITISH COUNCIL - BANGLADESH
+                </a>
+              </td>
               <td>IELTS & Schools Exam Invigilator</td>
             </tr>
             <tr className="border-slate-800">
               <td>March 2024 - January 2025</td>
-              <td><a className='hover:text-slate-700 hover:text-shadow-neutral-800 hover:text-shadow-xs underline' href="https://www.gen-soft.dev">GEN-SOFT</a></td>
+              <td>
+                <a
+                  className="hover:text-slate-700 hover:text-shadow-neutral-800 hover:text-shadow-xs underline"
+                  href="https://www.gen-soft.dev"
+                >
+                  GEN-SOFT
+                </a>
+              </td>
               <td>Project Manager</td>
+            </tr>
+            <tr className="border-slate-800">
+              <td>September 2025 - Present</td>
+              <td>
+                <a
+                  className="hover:text-slate-700 hover:text-shadow-neutral-800 hover:text-shadow-xs underline"
+                  href="https://www.nirobinfotech.com"
+                >
+                  NIROB INFO-TECH
+                </a>
+              </td>
+              <td>Marketing Executive</td>
             </tr>
           </tbody>
         </table>

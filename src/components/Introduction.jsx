@@ -11,7 +11,7 @@ export default function Introduction({ introductionHeight }) {
   const images = [img1, img2, img3, img4, img5];
   const [imgIndex, setImgIndex] = useState(0);
   const [cssState, setCssState] = useState('sm');
-  const states = ['sm', 'md'];
+  const states = ['sm', 'lg'];
 
   const spanCss = 'font-bold';
 
@@ -52,23 +52,22 @@ export default function Introduction({ introductionHeight }) {
       className="bg-neutral-100 flex flex-col justify-center items-center"
     >
       <h1
-        className={`text-2xl text-slate-900 font-bold my-4 mx-8 p-4 sm:text-3xl md:text-4xl lg:text-5xl text-shadow-${cssState} text-shadow-neutral-500 transition-all duration-500 ease-in-out`}
+        className={`text-2xl text-slate-900 font-bold my-4 mx-8 p-4 sm:text-3xl md:text-4xl lg:text-5xl ${cssState === 'sm' ? 'text-shadow-sm' : 'text-shadow-lg'} text-shadow-neutral-500 transition-all duration-500 ease-in-out`}
       >
         Introduction
       </h1>
       <div className="bg-neutral-100 w-full h-auto flex flex-col-reverse justify-center items-center md:flex-row">
-        <section className="w-1/2 my-4 flex justify-center items-center flex-col">
+        <section className="w-full sm:w-1/2 my-4 flex justify-center items-center flex-col overflow-hidden">
           <h1 className="text-slate-900 text-xl font-bold sm:text-2xl md:text-4xl">
             Hello there!
           </h1>
           <h1 className="text-slate-900 text-xl font-bold overflow-hidden sm:text-2xl md:text-4xl">
             I am{' '}
             <span
-              className={`text-shadow-neutral-500 text-shadow-${cssState} transition-all duration-1000 ease-in-out`}
+              className={`text-shadow-neutral-500 ${cssState === 'sm' ? 'text-shadow-sm' : 'text-shadow-md'} transition-all duration-1000 ease-in-out`}
             >
               Mohiuddin Mohi
             </span>
-            .
           </h1>
           <p className="text-slate-900 text-xs sm:text-sm text-center my-4">
             Full-Stack Developer | MERN-Stack Developer
@@ -142,7 +141,7 @@ export default function Introduction({ introductionHeight }) {
       </div>
       <div className="bg-neutral-100 text-slate-900 flex flex-col justify-center items-center my-4">
         <h1
-          className={`text-2xl text-slate-900 font-bold my-4 mx-8 p-4 sm:text-3xl md:text-4xl lg:text-5xl text-shadow-${cssState} text-shadow-neutral-500 transition-all duration-500 ease-in-out`}
+          className={`text-2xl text-slate-900 font-bold my-4 mx-8 p-4 sm:text-3xl md:text-4xl lg:text-5xl ${cssState === 'sm' ? 'text-shadow-sm' : 'text-shadow-lg'} text-shadow-neutral-500 transition-all duration-500 ease-in-out`}
         >
           Why hire me?
         </h1>
@@ -173,6 +172,9 @@ export default function Introduction({ introductionHeight }) {
           effortlessly. I am the comprehensive technical authority your team
           needs.
         </p>
+        <a href="/public/CV-mohiuddin-mohi.pdf"
+           download="mohiuddin-resume.pdf"
+           className='btn btn-md md:btn-lg lg:btn-xl btn-primary rounded-lg m-4 shadow-slate-800 shadow-md text-shadow-sm text-shadow-slate-800'>Download-CV</a>
       </div>
     </div>
   );
