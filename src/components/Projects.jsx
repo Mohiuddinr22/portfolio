@@ -6,6 +6,7 @@ import projectManagerImg from '../assets/projectManager.jpg';
 import shoppingCartImg from '../assets/shoppingCart.jpg';
 import placePickerImg from '../assets/placePicker.jpg';
 import quizAppImg from '../assets/quizApp.jpg';
+import shareOpinionImg from '../assets/shareOpinion.jpg';
 
 export default function Projects({ projectsHeight }) {
   const projectImages = [
@@ -57,6 +58,13 @@ export default function Projects({ projectsHeight }) {
       description:
         "This quiz app will show you the proper use of reactJS and it's core functionalities.",
       link: 'https://mohiuddinr22-quiz-app.netlify.app/',
+    },
+    {
+      title: 'Share Opinion',
+      img: shareOpinionImg,
+      description:
+        'This app is inspired by reddit. This will allow you to upload your opinion and up or down vote it.',
+      link: 'https://mohiuddinr22.github.io/share-opinion/',
     },
   ];
   const [cssState, setCssState] = useState('sm');

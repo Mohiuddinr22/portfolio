@@ -25,7 +25,7 @@ export default function Experiences({ experiencesHeight }) {
       <h1
         className={`text-2xl text-slate-900 font-bold my-4 mx-8 p-4 sm:text-3xl md:text-4xl lg:text-5xl ${cssState === 'sm' ? 'text-shadow-sm' : 'text-shadow-lg'} text-shadow-neutral-500 transition-all duration-500 ease-in-out`}
       >
-        Experinces
+        Experiences
       </h1>
       <div className="overflow-x-auto p-4 m-4 rounded-box border border-slate-content/5 bg-neutral-100">
         <table className="table text-slate-900 border-slate-800">

@@ -172,9 +172,13 @@ export default function Introduction({ introductionHeight }) {
           effortlessly. I am the comprehensive technical authority your team
           needs.
         </p>
-        <a href="/public/CV-mohiuddin-mohi.pdf"
-           download="mohiuddin-resume.pdf"
-           className='btn btn-md md:btn-lg lg:btn-xl btn-primary rounded-lg m-4 shadow-slate-800 shadow-md text-shadow-sm text-shadow-slate-800'>Download-CV</a>
+        <a
+          href="/CV-mohiuddin-mohi.pdf"
+          download="mohiuddin-resume.pdf"
+          className="btn btn-md md:btn-lg lg:btn-xl btn-primary rounded-lg m-4 shadow-slate-800 shadow-md text-shadow-sm text-shadow-slate-800"
+        >
+          Download-CV
+        </a>
       </div>
     </div>
   );
