@@ -29,7 +29,7 @@ export default function Projects({ projectsHeight }) {
       img: finalCountdownImg,
       description:
         'This is to show a proper use of the useRef function of reactJS. Just stop the time closer before the goal to score better.',
-      link: 'https://mohiuddinr22-almost-final-countdown.netlify.app/',
+      link: 'https://mohiuddinr22.github.io/almost-final-countdown',
     },
     {
       title: 'Project Manager App',
