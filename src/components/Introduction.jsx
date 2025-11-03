@@ -173,8 +173,8 @@ export default function Introduction({ introductionHeight }) {
           needs.
         </p>
         <a
-          href="/CV-mohiuddin-mohi.pdf"
-          download="mohiuddin-resume.pdf"
+          href="/CV-Mohiuddin-Mohi.pdf"
+          download="mohiuddin-mohi-resume.pdf"
           className="btn btn-md md:btn-lg lg:btn-xl btn-primary rounded-lg m-4 shadow-slate-800 shadow-md text-shadow-sm text-shadow-slate-800"
         >
           Download-CV
