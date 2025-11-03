@@ -22,7 +22,7 @@ export default function Projects({ projectsHeight }) {
       img: investmentCalcImg,
       description:
         'A calculator which calculates the investments and shows results of the profit based on the investment over years.',
-      link: 'https://mohiuddinr22-investment-calculator.netlify.app/',
+      link: 'https://mohiuddinr22.github.io/investment-calculator/',
     },
     {
       title: 'Final Countdown',
@@ -36,28 +36,28 @@ export default function Projects({ projectsHeight }) {
       img: projectManagerImg,
       description:
         'This is a basic project manager app where you can add projects with description, following tasks and due dates. You can also delete the project you want.',
-      link: 'https://mohiuddinr22-project-manager-app.netlify.app/',
+      link: 'https://mohiuddinr22.github.io/project-manager-app',
     },
     {
       title: 'Shopping App',
       img: shoppingCartImg,
       description:
         'An elegant design on how can an online shopping cart look like and how the products look so attractive.',
-      link: 'https://mohiuddinr22-shopping-cart.netlify.app',
+      link: 'https://mohiuddinr22.github.io/shopping-cart',
     },
     {
       title: 'Place Picker',
       img: placePickerImg,
       description:
         'This app lets you use your location so that it can show you nearby places based on your location.',
-      link: 'https://mohiuddinr22-place-picker.netlify.app/',
+      link: 'https://mohiuddinr22.github.io/place-picker',
     },
     {
       title: 'Quiz App',
       img: quizAppImg,
       description:
         "This quiz app will show you the proper use of reactJS and it's core functionalities.",
-      link: 'https://mohiuddinr22-quiz-app.netlify.app/',
+      link: 'https://mohiuddinr22.github.io/quiz-app',
     },
     {
       title: 'Share Opinion',
