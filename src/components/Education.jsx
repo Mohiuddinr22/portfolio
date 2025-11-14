@@ -41,19 +41,40 @@ export default function Education({ educationHeight }) {
             <tr className="border-slate-800">
               <td>2016</td>
               <td>Secondary School Certificate</td>
-              <td>RAJUK UTTARA MODEL COLLEGE</td>
+              <td>
+                <a
+                  href="https://www.rajukcollege.edu.bd/"
+                  className="hover:text-slate-700 hover:text-shadow-neutral-800 hover:text-shadow-xs underline"
+                >
+                  RAJUK UTTARA MODEL COLLEGE
+                </a>
+              </td>
               <td>Science</td>
             </tr>
             <tr className="border-slate-800">
               <td>2018</td>
               <td>Higher School Certificate</td>
-              <td>RAJUK UTTARA MODEL COLLEGE</td>
+              <td>
+                <a
+                  href="https://www.rajukcollege.edu.bd/"
+                  className="hover:text-slate-700 hover:text-shadow-neutral-800 hover:text-shadow-xs underline"
+                >
+                  RAJUK UTTARA MODEL COLLEGE
+                </a>
+              </td>
               <td>Science</td>
             </tr>
             <tr className="border-slate-800">
               <td>2026</td>
               <td>Bachelors of Science</td>
-              <td>AMERICAN INTERNATIONAL UNIVERSITY - BANGLADESH</td>
+              <td>
+                <a
+                  href="https://www.aiub.edu/"
+                  className="hover:text-slate-700 hover:text-shadow-neutral-800 hover:text-shadow-xs underline"
+                >
+                  AMERICAN INTERNATIONAL UNIVERSITY - BANGLADESH
+                </a>
+              </td>
               <td>Computer Science & Engineering</td>
             </tr>
           </tbody>
