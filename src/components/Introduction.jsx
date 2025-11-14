@@ -175,8 +175,8 @@ export default function Introduction({ introductionHeight }) {
         <a
           href="/CV-Mohiuddin-Mohi.pdf"
           download
-  target="_blank"
-  rel="noopener noreferrer"
+          target="_blank"
+          rel="noopener noreferrer"
           className="btn btn-md md:btn-lg lg:btn-xl btn-primary rounded-lg m-4 shadow-slate-800 shadow-md text-shadow-sm text-shadow-slate-800"
         >
           Download-CV
