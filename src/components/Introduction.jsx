@@ -4,11 +4,12 @@ import img2 from '../assets/IMG2.jpg';
 import img3 from '../assets/IMG3.jpg';
 import img4 from '../assets/IMG4.jpg';
 import img5 from '../assets/IMG5.jpg';
+import img6 from '../assets/IMG6.jpg';
 
 import { useEffect, useState } from 'react';
 
 export default function Introduction({ introductionHeight }) {
-  const images = [img1, img2, img3, img4, img5];
+  const images = [img1, img2, img3, img4, img5, img6];
   const [imgIndex, setImgIndex] = useState(0);
   const [cssState, setCssState] = useState('sm');
   const states = ['sm', 'lg'];
