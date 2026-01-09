@@ -6,12 +6,14 @@ export default function NavigationBar({
   educationHeight,
   skillsHeight,
   projectsHeight,
+  certificatesHeight,
   experiencesHeight,
 }) {
   const [introductionHighlight, setIntroductionHighlight] = useState('');
   const [educationHighlight, setEducationHighlight] = useState('');
   const [skillsHighlight, setSkillsHighlight] = useState('');
   const [projectsHighlight, setProjectsHighlight] = useState('');
+  const [certificatesHighlight, setCertificatesHighlight] = useState('');
   const [experiencesHighlight, setExperiencesHighlight] = useState('');
 
   const toIntroduction = introductionHeight.current
@@ -26,6 +28,9 @@ export default function NavigationBar({
   const toProjects = projectsHeight.current
     ? projectsHeight.current.offsetTop
     : undefined;
+  const toCertificates = certificatesHeight.current
+    ? certificatesHeight.current.offsetTop
+    : undefined;
   const toExperiences = experiencesHeight.current
     ? experiencesHeight.current.offsetTop
     : undefined;
@@ -37,6 +42,7 @@ export default function NavigationBar({
         !toEducation ||
         !toSkills ||
         !toProjects ||
+        !toCertificates ||
         !toExperiences
       ) {
         return;
@@ -61,10 +67,16 @@ export default function NavigationBar({
         setSkillsHighlight('');
       }
 
-      if (scrollY > toProjects && scrollY < toExperiences) {
+      if (scrollY > toProjects && scrollY < toCertificates) {
         setProjectsHighlight('  bg-neutral-300 text-slate-900');
       } else {
         setProjectsHighlight('');
+      }
+
+      if (scrollY > toCertificates && scrollY < toExperiences) {
+        setCertificatesHighlight(' bg-neutral-300 text-slate-900');
+      } else {
+        setCertificatesHighlight('');
       }
 
       if (scrollY > toExperiences) {
@@ -77,7 +89,14 @@ export default function NavigationBar({
     window.addEventListener('scroll', handleHighlight);
 
     return () => window.removeEventListener('scroll', handleHighlight);
-  }, [toIntroduction, toEducation, toSkills, toProjects]);
+  }, [
+    toIntroduction,
+    toEducation,
+    toSkills,
+    toProjects,
+    toCertificates,
+    toExperiences,
+  ]);
 
   function scrollToIntroduction() {
     if (introductionHeight.current) {
@@ -100,6 +119,12 @@ export default function NavigationBar({
   function scrollToProjects() {
     if (projectsHeight.current) {
       window.scrollTo({ top: toProjects - 130, behavior: 'smooth' });
+    }
+  }
+
+  function scrollToCertificates() {
+    if (certificatesHeight.current) {
+      window.scrollTo({ top: toCertificates - 130, behavior: 'smooth' });
     }
   }
 
@@ -179,10 +204,18 @@ export default function NavigationBar({
             </li>
             <li>
               <button
+                className={btnCss + certificatesHighlight}
+                onClick={scrollToCertificates}
+              >
+                Certificates
+              </button>
+            </li>
+            <li>
+              <button
                 className={btnCss + experiencesHighlight}
                 onClick={scrollToExperiences}
               >
-                Experience
+                Experiences
               </button>
             </li>
           </ul>
@@ -207,6 +240,11 @@ export default function NavigationBar({
         <li className={liCss + projectsHighlight}>
           <button className={' cursor-pointer'} onClick={scrollToProjects}>
             Projects
+          </button>
+        </li>
+        <li className={liCss + certificatesHighlight}>
+          <button className={' cursor-pointer'} onClick={scrollToCertificates}>
+            Certificates
           </button>
         </li>
         <li className={liCss + experiencesHighlight}>

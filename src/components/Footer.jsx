@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="footer footer-horizontal footer-center bg-base-200 w-full text-base-content rounded p-10">
       <div className="px-4 py-6 w-full bg-slate-100 dark:bg-slate-700 md:flex md:items-center md:justify-between">
         <span className="text-sm text-slate-500 dark:text-slate-300 sm:text-center">
-          © 2025{' '}
+          © 2026{' '}
           <a href="https://mohiuddinr22-portfolio.netlify.app/">
             Mohiuddin Mohi
           </a>

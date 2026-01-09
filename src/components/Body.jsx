@@ -5,12 +5,14 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Experiences from './Experiences';
 import FAB from './FAB';
+import Certificates from './Certifications';
 
 export default function Body({
   introductionHeight,
   educationHeight,
   skillsHeight,
   projectsHeight,
+  certificatesHeight,
   experiencesHeight,
 }) {
   return (
@@ -19,6 +21,7 @@ export default function Body({
       <Education educationHeight={educationHeight} />
       <Skills skillsHeight={skillsHeight} />
       <Projects projectsHeight={projectsHeight} />
+      <Certificates certificatesHeight={certificatesHeight} />
       <Experiences experiencesHeight={experiencesHeight} />
       <FAB />
     </div>

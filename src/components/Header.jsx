@@ -7,6 +7,7 @@ export default function Header({
   educationHeight,
   skillsHeight,
   projectsHeight,
+  certificatesHeight,
   experiencesHeight,
 }) {
   const [cssState, setCssState] = useState('sm');
@@ -60,6 +61,7 @@ export default function Header({
         educationHeight={educationHeight}
         skillsHeight={skillsHeight}
         projectsHeight={projectsHeight}
+        certificatesHeight={certificatesHeight}
         experiencesHeight={experiencesHeight}
       />
     </header>

@@ -9,6 +9,7 @@ function App() {
   const educationHeight = useRef();
   const skillsHeight = useRef();
   const projectsHeight = useRef();
+  const certificatesHeight = useRef();
   const experiencesHeight = useRef();
 
   return (
@@ -18,6 +19,7 @@ function App() {
         educationHeight={educationHeight}
         skillsHeight={skillsHeight}
         projectsHeight={projectsHeight}
+        certificatesHeight={certificatesHeight}
         experiencesHeight={experiencesHeight}
       />
       <Body
@@ -25,6 +27,7 @@ function App() {
         educationHeight={educationHeight}
         skillsHeight={skillsHeight}
         projectsHeight={projectsHeight}
+        certificatesHeight={certificatesHeight}
         experiencesHeight={experiencesHeight}
       />
       <Footer />
